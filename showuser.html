@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Utility in an Box Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css" media="screen">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="../" class="navbar-brand">Ciber Utility Inabox</a>
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#createuser">Create User</a>
+                </li>
+                <li>
+                    <a href="#showuser">Show User</a>
+                </li>
+                <li>
+                    <a href="#showinvoice">Show Invoice</a>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+</div>
+
+
+<div class="container">
+
+<div class="page-header" id="banner">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1>Show User</h1>
+            <p class="lead">fetch user from API</p>
+        </div>
+    </div>
+</div>
+<div class="bs-docs-section">
+    <div class="row">
+        <div class="col-lg-4 ">
+            <form>
+                <div class="form-group">
+                    <label class="control-label">Get Customer</label>
+                    <div class="input-group">
+                        <span class="input-group-addon">Customer ID</span>
+                        <input type="text" class="form-control">
+                        <span class="input-group-btn">
+                          <button class="btn btn-default" id="getcustomer" type="button">Get customer</button>
+                        </span>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- Forms
+================================================== -->
+<div class="bs-docs-section">
+    <div class="row">
+        <div class="col-lg-12">
+
+                    <div id="content-section"></div>
+
+        </div>
+
+        </div>
+    </div>
+</div>
+<script id="customer-form" type="text/x-handlebars-template">
+    <div class="well bs-component">
+        <form class="form-horizontal">
+            <fieldset>
+                <div class="form-group">
+                    <label for="customerID" class="col-lg-2 control-label">CustomerID</label>
+                    <div class="col-lg-10">
+                        <input class="form-control" id="customerID" type="text" placeholder="Customer ID" disabled="" value="{{customerId}}">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="sellerCode" class="col-lg-2 control-label">Sellercode</label>
+                    <div class="col-lg-10">
+                        <input class="form-control" id="sellerCode" type="text" placeholder="Seller Code" value="{{sellerCode}}">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="customerBrandcode" class="col-lg-2 control-label">Customer BrandCode</label>
+                    <div class="col-lg-10">
+                        <input class="form-control" id="customerBrandcode" type="text" placeholder="Customer Brandcode" value="{{customerBrandCode}}">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="customerCategoryCode" class="col-lg-2 control-label">Customer CategoryCode</label>
+                    <div class="col-lg-10">
+                        <input class="form-control" id="customerCategoryCode" type="text" placeholder="Customer CategoryCode" value="{{customerCategoryCode}}">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="currencyCode" class="col-lg-2 control-label">CurrencyCode</label>
+                    <div class="col-lg-10">
+                        <input class="form-control" id="currencyCode" type="text" placeholder="CurrencyCode" value="{{currencyCode}}">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="countryCode" class="col-lg-2 control-label">countryCode</label>
+                    <div class="col-lg-10">
+                        <input class="form-control" id="countryCode" type="text" placeholder="countryCode" value="{{countryCode}}">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="firstName" class="col-lg-2 control-label">firstName</label>
+                    <div class="col-lg-10">
+                        <input class="form-control" id="firstName" type="text" placeholder="firstName" value="{{firstName}}">
+                </div>
+                </div>
+                <div class="form-group">
+                    <label for="lastName" class="col-lg-2 control-label">lastName</label>
+                    <div class="col-lg-10">
+                        <input class="form-control" id="lastName" type="text" placeholder="lastName" value="{{lastName}}">
+                </div>
+                </div>
+                <div class="form-group">
+                    <label for="languageCode" class="col-lg-2 control-label">languageCode</label>
+                    <div class="col-lg-10">
+                        <input class="form-control" id="languageCode" type="text" placeholder="languageCode" value="{{languageCode}}">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="billingCycleCode" class="col-lg-2 control-label">billingCycleCode</label>
+                    <div class="col-lg-10">
+                        <input class="form-control" id="billingCycleCode" type="text" placeholder="billingCycleCode" value="{{billingCycleCode}}">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="col-lg-2 control-label">email</label>
+                    <div class="col-lg-10">
+                        <input class="form-control" id="email" type="text" placeholder="email" value="{{email}}">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="zipCode" class="col-lg-2 control-label">zipCode</label>
+                    <div class="col-lg-10">
+                        <input class="form-control" id="zipCode" type="text" placeholder="zipCode" value="{{zipCode}}">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="address1" class="col-lg-2 control-label">address1</label>
+                    <div class="col-lg-10">
+                        <input class="form-control" id="address1" type="text" placeholder="address1" value="{{address1}}">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="address2" class="col-lg-2 control-label">address2</label>
+                    <div class="col-lg-10">
+                        <input class="form-control" id="address2" type="text" placeholder="address2" value="{{address2}}">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="birthDate" class="col-lg-2 control-label">birthDate</label>
+                    <div class="col-lg-10">
+                        <input class="form-control" id="birthDate" type="text" placeholder="birthDate" value="{{birthDate}}">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="phoneNumber" class="col-lg-2 control-label">phoneNumber</label>
+                    <div class="col-lg-10">
+                        <input class="form-control" id="phoneNumber" type="text" placeholder="phoneNumber" value="{{phoneNumber}}">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="city" class="col-lg-2 control-label">city</label>
+                    <div class="col-lg-10">
+                        <input class="form-control" id="city" type="text" placeholder="city" value="{{city}}">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="titleCode" class="col-lg-2 control-label">titleCode</label>
+                    <div class="col-lg-10">
+                        <input class="form-control" id="titleCode" type="text" placeholder="titleCode" value="{{titleCode}}">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="providerId" class="col-lg-2 control-label">providerId</label>
+                    <div class="col-lg-10">
+                        <input class="form-control" id="providerId" type="text" placeholder="providerId" value="{{providerId}}">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="currentUserId" class="col-lg-2 control-label">currentUserId</label>
+                    <div class="col-lg-10">
+                        <input class="form-control" id="currentUserId" type="text" placeholder="currentUserId" value="{{currentUserId}}">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="requestId" class="col-lg-2 control-label">requestId</label>
+                    <div class="col-lg-10">
+                        <input class="form-control" id="requestId" type="text" placeholder="requestId" value="{{requestId}}">
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</script>
+
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/mustache.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>

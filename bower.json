@@ -1,0 +1,29 @@
+{
+  "name": "UtilityInABox",
+  "version": "0.0.0",
+  "authors": [
+    "Tijmen Kroon <tijmen.kroon@ciber.com>"
+  ],
+  "description": "Front-end voor Utility in a box",
+  "main": "createuser.html",
+  "keywords": [
+    "UtilityInABox"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "normalize.css": "~3.0.0",
+    "modernizr": "~2.7.2"
+  },
+  "devDependencies": {
+    "bootswatch": "~3.3.0",
+    "bootstrap": "~3.3.0",
+    "html5shiv": "~3.7.2",
+    "respond": "~1.4.2",
+    "mustache": "~0.8.2"
+  }
+}

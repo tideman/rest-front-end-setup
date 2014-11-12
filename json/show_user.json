@@ -1,0 +1,23 @@
+{
+    "customerId" : "1",
+    "sellerCode" : "SELLER_1",
+    "customerBrandCode" : "BRAND_1",
+    "customerCategoryCode" : "CUST_CATEGORY_1",
+    "currencyCode" : "USD",
+    "countryCode" : "US",
+    "firstName" : "Michael",
+    "lastName" : "Angelo",
+    "languageCode" : "ENG",
+    "billingCycleCode" : "BILLING_1",
+    "email" : "michael.angelo@manaty.net",
+    "zipCode" : "10001",
+    "address1" : "ADDRESS_1",
+    "address2" : "ADDRESS_2",
+    "birthDate" : "1991-11-21",
+    "phoneNumber" : "111111111111111",
+    "city" : "New York City",
+    "titleCode" : "MR",
+    "providerId" : "1",
+    "currentUserId" : "1",
+    "requestId" : "1"
+}
