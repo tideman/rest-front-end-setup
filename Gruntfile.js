@@ -2,17 +2,6 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
-        sass: {
-            dist: {
-                options: {
-                    noCache: true
-                },
-                files: {
-                    'css/main.css': 'sass/main.sass'
-                }
-            }
-        },
-
         concat: {
 
             dist: {
@@ -80,7 +69,6 @@ module.exports = function(grunt) {
         }
 
     });
-    grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-connect');
