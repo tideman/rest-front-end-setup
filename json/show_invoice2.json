@@ -1,0 +1,166 @@
+{
+    "actionStatus": {
+        "status": "SUCCESS",
+        "errorCode": 0
+    },
+    "CustomerInvoiceDtoList": [
+        {
+            "requestId": null,
+            "invoiceNumber": "URC-NL-000000031",
+            "billingAccountCode": "BA1",
+            "invoiceDate": 1415969575867,
+            "dueDate": 1416142375867,
+            "discount": null,
+            "amountWithoutTax": 221.87,
+            "amountTax": 46.59,
+            "amountWithTax": 268.46,
+            "paymentMathod": "CHECK",
+            "PDFpresent": false,
+            "subCategoryInvoiceAgregates": [
+                {
+                    "type": "T",
+                    "itemNumber": 6,
+                    "accountingCode": "GL_TAX_21",
+                    "description": null,
+                    "taxPercent": null,
+                    "quantity": null,
+                    "discount": null,
+                    "amountWithoutTax": 221.87,
+                    "amountTax": 46.59,
+                    "amountWithTax": 268.46,
+                    "ratedTransactions": []
+                },
+                {
+                    "type": "R",
+                    "itemNumber": 1,
+                    "accountingCode": null,
+                    "description": null,
+                    "taxPercent": null,
+                    "quantity": null,
+                    "discount": null,
+                    "amountWithoutTax": 0.4,
+                    "amountTax": null,
+                    "amountWithTax": null,
+                    "ratedTransactions": []
+                },
+                {
+                    "type": "F",
+                    "itemNumber": 2,
+                    "accountingCode": "GL-GAS-SCAT1",
+                    "description": null,
+                    "taxPercent": null,
+                    "quantity": 1.17,
+                    "discount": null,
+                    "amountWithoutTax": 0.4,
+                    "amountTax": 0.08398470717,
+                    "amountWithTax": 0.48,
+                    "ratedTransactions": []
+                },
+                {
+                    "type": "R",
+                    "itemNumber": 3,
+                    "accountingCode": null,
+                    "description": null,
+                    "taxPercent": null,
+                    "quantity": null,
+                    "discount": null,
+                    "amountWithoutTax": 23.85,
+                    "amountTax": null,
+                    "amountWithTax": null,
+                    "ratedTransactions": []
+                },
+                {
+                    "type": "F",
+                    "itemNumber": 2,
+                    "accountingCode": "GL-ELEC-SCAT1",
+                    "description": null,
+                    "taxPercent": null,
+                    "quantity": 9.17,
+                    "discount": null,
+                    "amountWithoutTax": 0.68,
+                    "amountTax": 0.14036908725,
+                    "amountWithTax": 0.82,
+                    "ratedTransactions": []
+                },
+                {
+                    "type": "R",
+                    "itemNumber": 1,
+                    "accountingCode": null,
+                    "description": null,
+                    "taxPercent": null,
+                    "quantity": null,
+                    "discount": null,
+                    "amountWithoutTax": 54.24,
+                    "amountTax": null,
+                    "amountWithTax": null,
+                    "ratedTransactions": []
+                },
+                {
+                    "type": "F",
+                    "itemNumber": 2,
+                    "accountingCode": "GL-ETAX-SCAT2",
+                    "description": null,
+                    "taxPercent": null,
+                    "quantity": 1.3,
+                    "discount": null,
+                    "amountWithoutTax": 54.24,
+                    "amountTax": 11.390608836605,
+                    "amountWithTax": 65.63,
+                    "ratedTransactions": []
+                },
+                {
+                    "type": "F",
+                    "itemNumber": 2,
+                    "accountingCode": "GL-ELEC-SCAT2",
+                    "description": null,
+                    "taxPercent": null,
+                    "quantity": 0.23,
+                    "discount": null,
+                    "amountWithoutTax": -0.02,
+                    "amountTax": -0.00352070775,
+                    "amountWithTax": -0.02,
+                    "ratedTransactions": []
+                },
+                {
+                    "type": "R",
+                    "itemNumber": 1,
+                    "accountingCode": null,
+                    "description": null,
+                    "taxPercent": null,
+                    "quantity": null,
+                    "discount": null,
+                    "amountWithoutTax": 143.38,
+                    "amountTax": null,
+                    "amountWithTax": null,
+                    "ratedTransactions": []
+                },
+                {
+                    "type": "F",
+                    "itemNumber": 2,
+                    "accountingCode": "GL-GRID-SCAT1",
+                    "description": null,
+                    "taxPercent": null,
+                    "quantity": 1.3,
+                    "discount": null,
+                    "amountWithoutTax": 143.38,
+                    "amountTax": 30.109167104813,
+                    "amountWithTax": 173.49,
+                    "ratedTransactions": []
+                },
+                {
+                    "type": "F",
+                    "itemNumber": 2,
+                    "accountingCode": "GL-ELEC-SCAT4",
+                    "description": null,
+                    "taxPercent": null,
+                    "quantity": 1.3,
+                    "discount": null,
+                    "amountWithoutTax": 23.19,
+                    "amountTax": 4.869628089202,
+                    "amountWithTax": 28.06,
+                    "ratedTransactions": []
+                }
+            ]
+        }
+    ]
+}

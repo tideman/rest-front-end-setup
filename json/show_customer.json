@@ -1,0 +1,24 @@
+{
+    "actionStatus": {
+        "status": "SUCCESS",
+        "errorCode": 0
+    },
+    "customerAccountDto": {
+        "requestId": null,
+        "status": "ACTIVE",
+        "paymentMethod": "DIRECTDEBIT",
+        "creditCategory": "NEWCUSTOMER",
+        "accountOperations": [],
+        "dateStatus": null,
+        "dateDunningLevel": 1415113394361,
+        "email": "ca-info@utility-in-a-box.com",
+        "phone": null,
+        "mobile": null,
+        "fax": null,
+        "customerCode": "CUST1",
+        "dunningLevel": "R0",
+        "mandateIdentification": null,
+        "mandateDate": null,
+        "balance": 0
+    }
+}

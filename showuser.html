@@ -60,7 +60,7 @@
                     <label class="control-label">Get Customer</label>
                     <div class="input-group">
                         <span class="input-group-addon">Customer ID</span>
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" value="CA1">
                         <span class="input-group-btn">
                           <button class="btn btn-default" id="getcustomer" type="button">Get customer</button>
                         </span>
@@ -88,131 +88,66 @@
         <form class="form-horizontal">
             <fieldset>
                 <div class="form-group">
-                    <label for="customerID" class="col-lg-2 control-label">CustomerID</label>
+                    <label for="status" class="col-lg-2 control-label">Status</label>
                     <div class="col-lg-10">
-                        <input class="form-control" id="customerID" type="text" placeholder="Customer ID" disabled="" value="{{customerId}}">
+                        <input class="form-control" id="status" type="text" placeholder="Status"  value="{{status}}">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="sellerCode" class="col-lg-2 control-label">Sellercode</label>
+                    <label for="paymentMethod" class="col-lg-2 control-label">PaymentMethod</label>
                     <div class="col-lg-10">
-                        <input class="form-control" id="sellerCode" type="text" placeholder="Seller Code" value="{{sellerCode}}">
+                        <input class="form-control" id="paymentMethod" type="text" placeholder="paymentMethod"  value="{{paymentMethod}}">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="customerBrandcode" class="col-lg-2 control-label">Customer BrandCode</label>
+                    <label for="creditCategory" class="col-lg-2 control-label">CreditCategory</label>
                     <div class="col-lg-10">
-                        <input class="form-control" id="customerBrandcode" type="text" placeholder="Customer Brandcode" value="{{customerBrandCode}}">
+                        <input class="form-control" id="creditCategory" type="text" placeholder="creditCategory"  value="{{creditCategory}}">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="customerCategoryCode" class="col-lg-2 control-label">Customer CategoryCode</label>
+                    <label for="dateDunningLevel" class="col-lg-2 control-label">DateDunningLevel</label>
                     <div class="col-lg-10">
-                        <input class="form-control" id="customerCategoryCode" type="text" placeholder="Customer CategoryCode" value="{{customerCategoryCode}}">
+                        <input class="form-control" id="dateDunningLevel" type="text" placeholder="dateDunningLevel"  value="{{dateDunningLevel}}">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="currencyCode" class="col-lg-2 control-label">CurrencyCode</label>
+                    <label for="email" class="col-lg-2 control-label">Email</label>
                     <div class="col-lg-10">
-                        <input class="form-control" id="currencyCode" type="text" placeholder="CurrencyCode" value="{{currencyCode}}">
+                        <input class="form-control" id="email" type="text" placeholder="email"  value="{{email}}">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="countryCode" class="col-lg-2 control-label">countryCode</label>
+                    <label for="phone" class="col-lg-2 control-label">Phone</label>
                     <div class="col-lg-10">
-                        <input class="form-control" id="countryCode" type="text" placeholder="countryCode" value="{{countryCode}}">
+                        <input class="form-control" id="phone" type="text" placeholder="phone"  value="{{phone}}">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="firstName" class="col-lg-2 control-label">firstName</label>
+                    <label for="mobile" class="col-lg-2 control-label">Mobile</label>
                     <div class="col-lg-10">
-                        <input class="form-control" id="firstName" type="text" placeholder="firstName" value="{{firstName}}">
-                </div>
-                </div>
-                <div class="form-group">
-                    <label for="lastName" class="col-lg-2 control-label">lastName</label>
-                    <div class="col-lg-10">
-                        <input class="form-control" id="lastName" type="text" placeholder="lastName" value="{{lastName}}">
-                </div>
-                </div>
-                <div class="form-group">
-                    <label for="languageCode" class="col-lg-2 control-label">languageCode</label>
-                    <div class="col-lg-10">
-                        <input class="form-control" id="languageCode" type="text" placeholder="languageCode" value="{{languageCode}}">
+                        <input class="form-control" id="mobile" type="text" placeholder="mobile"  value="{{mobile}}">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="billingCycleCode" class="col-lg-2 control-label">billingCycleCode</label>
+                    <label for="fax" class="col-lg-2 control-label">Fax</label>
                     <div class="col-lg-10">
-                        <input class="form-control" id="billingCycleCode" type="text" placeholder="billingCycleCode" value="{{billingCycleCode}}">
+                        <input class="form-control" id="fax" type="text" placeholder="fax"  value="{{fax}}">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="email" class="col-lg-2 control-label">email</label>
+                    <label for="customerCode" class="col-lg-2 control-label">CustomerCode</label>
                     <div class="col-lg-10">
-                        <input class="form-control" id="email" type="text" placeholder="email" value="{{email}}">
+                        <input class="form-control" id="customerCode" type="text" placeholder="customerCode"  value="{{customerCode}}">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="zipCode" class="col-lg-2 control-label">zipCode</label>
+                    <label for="dunninglevel" class="col-lg-2 control-label">Dunninglevel</label>
                     <div class="col-lg-10">
-                        <input class="form-control" id="zipCode" type="text" placeholder="zipCode" value="{{zipCode}}">
+                        <input class="form-control" id="dunninglevel" type="text" placeholder="dunninglevel"  value="{{dunningLevel}}">
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="address1" class="col-lg-2 control-label">address1</label>
-                    <div class="col-lg-10">
-                        <input class="form-control" id="address1" type="text" placeholder="address1" value="{{address1}}">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="address2" class="col-lg-2 control-label">address2</label>
-                    <div class="col-lg-10">
-                        <input class="form-control" id="address2" type="text" placeholder="address2" value="{{address2}}">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="birthDate" class="col-lg-2 control-label">birthDate</label>
-                    <div class="col-lg-10">
-                        <input class="form-control" id="birthDate" type="text" placeholder="birthDate" value="{{birthDate}}">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="phoneNumber" class="col-lg-2 control-label">phoneNumber</label>
-                    <div class="col-lg-10">
-                        <input class="form-control" id="phoneNumber" type="text" placeholder="phoneNumber" value="{{phoneNumber}}">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="city" class="col-lg-2 control-label">city</label>
-                    <div class="col-lg-10">
-                        <input class="form-control" id="city" type="text" placeholder="city" value="{{city}}">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="titleCode" class="col-lg-2 control-label">titleCode</label>
-                    <div class="col-lg-10">
-                        <input class="form-control" id="titleCode" type="text" placeholder="titleCode" value="{{titleCode}}">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="providerId" class="col-lg-2 control-label">providerId</label>
-                    <div class="col-lg-10">
-                        <input class="form-control" id="providerId" type="text" placeholder="providerId" value="{{providerId}}">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="currentUserId" class="col-lg-2 control-label">currentUserId</label>
-                    <div class="col-lg-10">
-                        <input class="form-control" id="currentUserId" type="text" placeholder="currentUserId" value="{{currentUserId}}">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="requestId" class="col-lg-2 control-label">requestId</label>
-                    <div class="col-lg-10">
-                        <input class="form-control" id="requestId" type="text" placeholder="requestId" value="{{requestId}}">
-                    </div>
-                </div>
+
             </fieldset>
         </form>
     </div>
