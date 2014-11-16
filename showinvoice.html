@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Utility in an Box Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css" media="screen">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="../" class="navbar-brand">Ciber Utility Inabox</a>
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="showcustomer.html">Show Customer</a>
+                </li>
+                <li>
+                    <a href="showinvoice.html">Show Invoice</a>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+</div>
+
+
+<div class="container">
+
+    <div class="page-header" id="banner">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>Show Invoice</h1>
+                <p class="lead">fetch invoice from API</p>
+            </div>
+        </div>
+    </div>
+    <div class="bs-docs-section">
+        <div class="row">
+            <div class="col-lg-4 ">
+                <form>
+                    <div class="form-group">
+                        <label class="control-label">Get Invoice</label>
+                        <div class="input-group">
+                            <span class="input-group-addon">Invoicenumber</span>
+                            <input type="text" class="form-control" value="URC-NL-000000031">
+                        <span class="input-group-btn">
+                          <button class="btn btn-default" id="getinvoice" type="button">Get invoice</button>
+                        </span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Forms
+    ================================================== -->
+    <div class="bs-docs-section">
+        <div class="row">
+            <div class="col-lg-12">
+
+                <div id="content-section"></div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<script id="invoice-form" type="text/x-handlebars-template">
+    <div class="well bs-component">
+        <form class="form-horizontal">
+            <fieldset>
+                <div class="form-group">
+                    <label for="invoiceNumber" class="col-lg-2 control-label">invoiceNumber</label>
+                    <div class="col-lg-10">
+                        <input class="form-control" id="invoiceNumber" type="text" placeholder="invoiceNumber"  value="{{invoiceNumber}}">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="billingAccountCode" class="col-lg-2 control-label">billingAccountCode</label>
+                    <div class="col-lg-10">
+                        <input class="form-control" id="billingAccountCode" type="text" placeholder="billingAccountCode"  value="{{billingAccountCode}}">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="invoiceDate" class="col-lg-2 control-label">invoiceDate</label>
+                    <div class="col-lg-10">
+                        <input class="form-control" id="invoiceDate" type="text" placeholder="invoiceDate"  value="{{invoiceDate}}">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="dueDate" class="col-lg-2 control-label">dueDate</label>
+                    <div class="col-lg-10">
+                        <input class="form-control" id="dueDate" type="text" placeholder="dueDate"  value="{{dueDate}}">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="amountWithoutTax" class="col-lg-2 control-label">amountWithoutTax</label>
+                    <div class="col-lg-10">
+                        <input class="form-control" id="amountWithoutTax" type="text" placeholder="amountWithoutTax"  value="{{amountWithoutTax}}">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="amountTax" class="col-lg-2 control-label">amountTax</label>
+                    <div class="col-lg-10">
+                        <input class="form-control" id="amountTax" type="text" placeholder="amountTax"  value="{{amountTax}}">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="paymentMathod" class="col-lg-2 control-label">paymentMethod</label>
+                    <div class="col-lg-10">
+                        <input class="form-control" id="paymentMathod" type="text" placeholder="paymentMethod"  value="{{paymentMathod}}">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="PDFpresent" class="col-lg-2 control-label">PDFpresent</label>
+                    <div class="col-lg-10">
+                        <input class="form-control" id="PDFpresent" type="text" placeholder="PDFpresent"  value="{{PDFpresent}}">
+                    </div>
+                </div>
+                
+            </fieldset>
+        </form>
+    </div>
+</script>
+
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/mustache.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>
